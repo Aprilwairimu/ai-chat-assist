@@ -1,0 +1,113 @@
+body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+}
+
+.avatar-chatbot {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #555;
+      border-radius: 10px;
+      background-color: #1a1a1a;
+}
+
+.chat-history {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-bottom: 200px;
+      padding: 10px;
+      /* background-color: #2e2e2e; */
+      border-radius: 10px;
+}
+
+.chat-message {
+      display: flex;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+
+}
+
+.chat-message.user {
+      justify-content: flex-end;
+      background-color: #7892d2;
+      color: #fff;
+      width: 50%;
+
+}
+
+.chat-message.bot {
+      justify-content: flex-start;
+      background-color: #3e3e3e;
+      color: #fff;
+      position: relative;
+      padding-left: 90px;
+      width: 50%;
+}
+
+.chat-message.bot:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      /* Align with the top of the message */
+      left: 20px;
+      /* Adjust left position for avatar */
+      width: 40px;
+      height: 40px;
+      background-image: url('../Assets/Animation\ -\ 1721996861087.gif');
+      background-size: cover;
+      border-radius: 50%;
+}
+
+input[type="text"] {
+      width: calc(100% - 80px);
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2e2e2e;
+      color: #fff;
+      margin-right: 10px;
+}
+
+button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #6200ea;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 30px;
+}
+
+button:hover {
+      background-color: #bb86fc;
+}
+
+.cards {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      margin-top: 50px;
+}
+
+.card {
+      width: 20%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 10px;
+      background-color: #1a1a1a;
+      text-align: center;
+      transition: transform 0.3s;
+}
+
+.card:hover {
+      transform: translateY(-10px);
+}
+
+.card-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #6200ea;
+}

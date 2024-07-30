@@ -5,6 +5,18 @@
 /.pnp
 .pnp.js
 
+# Ignore environment variable files
+backend/.env
+# Ignore Google Cloud service account key
+backend/ai-assistance.json
+
+# Node modules
+node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+
 # testing
 /coverage
 
